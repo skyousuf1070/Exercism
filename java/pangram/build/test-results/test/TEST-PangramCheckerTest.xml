@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="PangramCheckerTest" tests="10" skipped="0" failures="1" errors="0" timestamp="2019-12-26T10:46:17" hostname="INYousufbabaShaiks-MacBook-Pro.local" time="0.038">
+  <properties/>
+  <testcase name="perfectLowerCasePhraseIsPangram" classname="PangramCheckerTest" time="0.006"/>
+  <testcase name="phraseWithNumbersIsPangram" classname="PangramCheckerTest" time="0.004"/>
+  <testcase name="phraseWithUnderscoresIsPangram" classname="PangramCheckerTest" time="0.003"/>
+  <testcase name="phraseWithOnlyLowerCaseIsPangram" classname="PangramCheckerTest" time="0.003"/>
+  <testcase name="phraseMissingCharacterXIsNotPangram" classname="PangramCheckerTest" time="0.004"/>
+  <testcase name="phraseMissingCharacterHIsNotPangram" classname="PangramCheckerTest" time="0.003"/>
+  <testcase name="phraseWithMissingLettersReplacedByNumbersIsNotPangram" classname="PangramCheckerTest" time="0.002"/>
+  <testcase name="emptySentenceIsNotPangram" classname="PangramCheckerTest" time="0.0"/>
+  <testcase name="phraseWithMixedCaseAndPunctuationIsPangram" classname="PangramCheckerTest" time="0.005">
+    <failure message="java.lang.AssertionError" type="java.lang.AssertionError">java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at PangramCheckerTest.phraseWithMixedCaseAndPunctuationIsPangram(PangramCheckerTest.java:67)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:118)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:175)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:157)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+</failure>
+  </testcase>
+  <testcase name="caseInsensitivePhraseIsNotPangram" classname="PangramCheckerTest" time="0.007"/>
+  <system-out><![CDATA[a
+b
+c
+d
+e
+f
+g
+h
+i
+j
+k
+l
+m
+n
+o
+p
+q
+r
+s
+t
+u
+v
+w
+x
+y
+z
+{a=1, b=1, c=1, d=1, e=1, f=1, g=1, h=1, i=1, j=1, k=1, l=1, m=1, n=1, o=1, p=1, q=1, r=1, s=1, t=1, u=1, v=1, w=1, x=1, y=1, z=1}
+t
+h
+e
+1
+q
+u
+i
+c
+k
+b
+r
+o
+w
+n
+f
+o
+x
+j
+u
+m
+p
+s
+o
+v
+e
+r
+t
+h
+e
+2
+l
+a
+z
+y
+d
+o
+g
+s
+{a=1, b=1, c=1, d=1, e=1, f=1, g=1, h=1, i=1, j=1, k=1, l=1, m=1, n=1, o=1, p=1, q=1, r=1, s=1, t=1, u=1, v=1, w=1, x=1, y=1, z=1}
+t
+h
+e
+q
+u
+i
+c
+k
+b
+r
+o
+w
+n
+f
+o
+x
+j
+u
+m
+p
+s
+o
+v
+e
+r
+t
+h
+e
+l
+a
+z
+y
+d
+o
+g
+{a=1, b=1, c=1, d=1, e=1, f=1, g=1, h=1, i=1, j=1, k=1, l=1, m=1, n=1, o=1, p=1, q=1, r=1, s=1, t=1, u=1, v=1, w=1, x=1, y=1, z=1}
+t
+h
+e
+q
+u
+i
+c
+k
+b
+r
+o
+w
+n
+f
+o
+x
+j
+u
+m
+p
+s
+o
+v
+e
+r
+t
+h
+e
+l
+a
+z
+y
+d
+o
+g
+{a=1, b=1, c=1, d=1, e=1, f=1, g=1, h=1, i=1, j=1, k=1, l=1, m=1, n=1, o=1, p=1, q=1, r=1, s=1, t=1, u=1, v=1, w=1, x=1, y=1, z=1}
+a
+q
+u
+i
+c
+k
+m
+o
+v
+e
+m
+e
+n
+t
+o
+f
+t
+h
+e
+e
+n
+e
+m
+y
+w
+i
+l
+l
+j
+e
+o
+p
+a
+r
+d
+i
+z
+e
+f
+i
+v
+e
+g
+u
+n
+b
+o
+a
+t
+s
+{a=1, b=1, c=1, d=1, e=1, f=1, g=1, h=1, i=1, j=1, k=1, l=1, m=1, n=1, o=1, p=1, q=1, r=1, s=1, t=1, u=1, v=1, w=1, y=1, z=1}
+Yes
+f
+i
+v
+e
+b
+o
+x
+i
+n
+g
+w
+i
+z
+a
+r
+d
+s
+j
+u
+m
+p
+q
+u
+i
+c
+k
+l
+y
+a
+t
+i
+t
+{a=1, b=1, c=1, d=1, e=1, f=1, g=1, i=1, j=1, k=1, l=1, m=1, n=1, o=1, p=1, q=1, r=1, s=1, t=1, u=1, v=1, w=1, x=1, y=1, z=1}
+Yes
+7
+h
+3
+q
+u
+1
+c
+k
+b
+r
+o
+w
+n
+f
+o
+x
+j
+u
+m
+p
+s
+o
+v
+3
+r
+7
+h
+3
+l
+a
+z
+y
+d
+o
+g
+{a=1, b=1, c=1, d=1, f=1, g=1, h=1, j=1, k=1, l=1, m=1, n=1, o=1, p=1, q=1, r=1, s=1, u=1, v=1, w=1, x=1, y=1, z=1}
+Yes
+"
+F
+i
+v
+e
+q
+u
+a
+c
+k
+i
+n
+g
+Z
+e
+p
+h
+y
+r
+s
+j
+o
+l
+t
+m
+y
+w
+a
+x
+b
+e
+d
+.
+"
+{a=1, b=1, c=1, d=1, e=1, g=1, h=1, i=1, j=1, k=1, l=1, m=1, n=1, o=1, p=1, q=1, r=1, s=1, t=1, u=1, v=1, w=1, x=1, y=1}
+Yes
+t
+h
+e
+q
+u
+i
+c
+k
+b
+r
+o
+w
+n
+f
+o
+x
+j
+u
+m
+p
+s
+o
+v
+e
+r
+w
+i
+t
+h
+l
+a
+z
+y
+F
+X
+{a=1, b=1, c=1, e=1, f=1, h=1, i=1, j=1, k=1, l=1, m=1, n=1, o=1, p=1, q=1, r=1, s=1, t=1, u=1, v=1, w=1, x=1, y=1, z=1}
+Yes
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
