@@ -1,24 +1,24 @@
 class ArmstrongNumbers {
 
-	int findNoOfDigits(int n) {
-		int count = 0;
-		while(n>0) {
-			count++;
-			n = n/10;
-		}
-		return count;
-	}
+    private int orderOf(int number) {
+        int order = 0;
+        while (number > 0) {
+            order++;
+            number = number / 10;
+        }
+        return order;
+    }
 
-	boolean isArmstrongNumber(int numberToCheck) {
-		int n = numberToCheck;
-		int count = findNoOfDigits(numberToCheck);
-		int generatedNum = 0;
-		while(n>0) {
-			int remainder = n%10;
-			generatedNum += Math.pow(remainder,count);
-			n = n/10;
-		}
-		return generatedNum==numberToCheck;
-	}
+    public boolean isArmstrongNumber(int numberToCheck) {
+        int number = numberToCheck;
+        int order = orderOf(numberToCheck);
+        int generatedNumber = 0;
+        while (number > 0) {
+            int remainder = number % 10;
+            generatedNumber += Math.pow(remainder, order);
+            number = number / 10;
+        }
+        return generatedNumber == numberToCheck;
+    }
 
 }
